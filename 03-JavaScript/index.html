@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Home Sweet Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/history.html">History</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <h2>Kitchen</h2>
+        <div><i class="fas fa-thermometer-empty"></i> Temperature 21.6 °C 5 minutes ago</div>
+        <div><i class="far fa-lightbulb"></i> Lights 
+            <a id="kitchenLight" href="#">
+                <i id="iconKitchenLight"
+                    class="fas fa-lg fa-toggle-off"></i>
+            </a>
+             10 minutes ago</div>
+        <div><i class="far fa-eye"></i> West Window Open 15 minutes ago</div>
+        <div><i class="far fa-eye"></i> North Window Open 15 minutes ago</div>
+    </section>
+
+    <section>
+        <h2>Living Room</h2>
+        <div><i class="fas fa-thermometer-empty"></i> Temperature 22.6 °C 5 minutes ago</div>
+        <div><i class="far fa-lightbulb"></i> Ceiling Lights Off 7 minutes ago</div>
+        <div><i class="fas fa-lightbulb"></i> Ambient Lights On 7 minutes ago</div>
+        <div><i class="fas fa-music"></i> Ambient Music On 17 minutes ago</div>
+    </section>
+
+    <section>
+        <h2>Clock</h2>
+        <div><i class="far fa-clock"></i> Time 22:30</div>
+        <div><i class="far fa-calendar-alt"></i> Date 2018-09-18</div>
+        <div><i class="fas fa-sun"></i> Sunrise / Sunset above horizon</div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
