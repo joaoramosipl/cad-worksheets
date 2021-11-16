@@ -14,35 +14,16 @@
 
 <body>
 	<div id="app">
-		<p>{{ message }}</p>
-		<span v-bind:title="message">Span exemplo</span>
+        <toggle v-for="lampada in ['l1', 'l2']" :title="lampada"></toggle>
 
-		<p v-if="seen">Seen está a true</p>
-
-		<p v-else>Seen está a false</p>
-
-		<ol>
-			<li v-for="link in links">
-				Link: {{ link }}
-			</li>
-		</ol>
-
-		<i class="fas" :class="{ 'fa-toggle-on': isOn, 'fa-toggle-off': !isOn }"></i>
-	
-		<input v-model="message">
-
-		<button @click="reverseMessage">Reverse!!</button>
-		<p>{{ counter }}</p>
-
-		<p>Message reversed: {{ messageReversed }}</p>
-	</div>
+    </div>
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
 		crossorigin="anonymous"></script>
 
 	<script src="js/vue.js"></script>
-	<script src="js/main.js"></script>
+	<script src="js/main3.js"></script>
 </body>
 
 </html>
